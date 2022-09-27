@@ -1,0 +1,103 @@
+.routeContainer {
+  width: 95%;
+  /*height: 100vh;*/
+}
+
+.dropdown {
+  width: 400px;
+  user-select: none;
+  margin: 30px 15px;
+  position: relative;
+  z-index: 1000;
+}
+
+.dropdown .dropdown-btn {
+  padding: 15px 20px;
+  box-shadow: 3px 3px 10px 6px rgba(0,0,0,0.06);
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropdown .dropdown-content {
+  position: absolute;
+  top:  110%;
+  left: 0;
+  padding: 10px;
+  box-shadow: 3px 3px 10px 6px rgba(0,0,0,0.06);
+  font-weight: 500;
+  /*color: #333;*/
+  background: white;
+  width: 100%;
+  overflow-y: scroll;
+  max-height: 195px;
+}
+
+.dropdown .dropdown-content .dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.dropdown .dropdown-content .dropdown-item:hover {
+  background: #f4f4f4;
+}
+
+.osmContainer {
+  /*width: 1360px;*/
+}
+
+.statsBox { 
+  display: inline-block;
+  position: absolute;
+  right: 0%;
+  width: 400px;
+  height: 320px;
+  background: white;
+  z-index: 999;
+}
+
+.infoBox {
+  display: flex;
+  /*position: relative;*/
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100px;
+  height: 25px;
+  background: blue;
+  color: white;
+  border-radius: 10px;
+  z-index: 999;
+}
+
+.resetBox {
+  display: inline-block;
+  position: absolute;
+  top: 325px;
+  width: 100px;
+  height: 25px;
+  right: 20px;
+  background: red;
+  color: white;
+  border-radius: 10px;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.toggleBox {
+  display: inline-block;
+  position: absolute;
+  top: 325px;
+  width: 100px;
+  height: 25px;
+  right: 125px;
+  background: red;
+  color: white;
+  border-radius: 10px;
+  z-index: 999;
+  cursor: pointer;
+}

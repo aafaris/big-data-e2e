@@ -1,0 +1,46 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+
+.navbar_item {
+    padding: 16px 16px;
+    color: black;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.navbar,
+.navbar .navbar_item:after,
+.navbar .navbar_item:before {
+    transition: all .5s;
+}
+
+.navbar .navbar_item,
+.navbar .navbar_item:hover {
+    position: relative;
+}
+
+.navbar .navbar_item:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: green;
+    height: 2px;
+}
+
+.navbar .navbar_item:hover:after {
+    width: 100%;
+}
+
+.navbar:hover,
+.navbar_item:hover {
+    color: green;
+}
